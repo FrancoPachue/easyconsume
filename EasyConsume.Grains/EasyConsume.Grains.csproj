@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LaunchDarkly.EventSource" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Orleans.EventSourcing" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Orleans.Reminders" Version="8.1.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyConsume.Domain\EasyConsume.Domain.csproj" />
+    <ProjectReference Include="..\EasyConsume.GrainInterfaces\EasyConsume.GrainInterfaces.csproj" />
+    <ProjectReference Include="..\EasyConsume.Infrastructure\EasyConsume.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
